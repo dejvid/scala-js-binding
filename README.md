@@ -98,15 +98,15 @@ Usually mains view attached to body tag is created. In quoted sample there are b
 
 
 In general following kinds of bindings are available: 
-    * data-bind="propertyname" that binds html element to the property. Depending on html tag it can be text inside html or value (if input element is used)     
-    * data-bind-attributename="propertyname" that binds attribute to property. For instance data-bind-href="currentLink" binds href attribute   
-    * data-showif="propertyname" and data-hide-if that show/hide tags according to boolean value
-    * data-event-eventname="eventproperty" that handles various events (clicks, mouseovers and so on)
-    * data-html that binds inner html to some scalatag
-    * data-view="ViewClassName" - to load Scala view class for html element. 
-    * data-param="paramvalue" - defines some parameter for the view that will be used for its initialization
-    * data-template="true" - defines if current tag is a template of item inside collection, if so it will be copied for each new item
-    * data-item-bind="itempropertyvalue" that are used inside collections to bind tag to properties of corresponding item in the collections
+ * data-bind="propertyname" that binds html element to the property. Depending on html tag it can be text inside html or value (if input element is used)     
+ * data-bind-attributename="propertyname" that binds attribute to property. For instance data-bind-href="currentLink" binds href attribute   
+ * data-showif="propertyname" and data-hide-if that show/hide tags according to boolean value
+ * data-event-eventname="eventproperty" that handles various events (clicks, mouseovers and so on)
+ * data-html that binds inner html to some scalatag
+ * data-view="ViewClassName" - to load Scala view class for html element. 
+ * data-param="paramvalue" - defines some parameter for the view that will be used for its initialization
+ * data-template="true" - defines if current tag is a template of item inside collection, if so it will be copied for each new item
+ * data-item-bind="itempropertyvalue" that are used inside collections to bind tag to properties of corresponding item in the collections
 In most of the cases reactive definitions (Rx-es) or reactive varaibles (Var-s) are used for binding because of they great ability to propagate
 changes to other variables and be observed by handlers. You can read more about them in ScalaRx library ( https://github.com/scala-js/scala-js )
 documentation. You can also write your own bindings and add them to views.
